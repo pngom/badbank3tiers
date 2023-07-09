@@ -55,48 +55,49 @@ function Login(){
       });  
     }
     
-    function handleGoogle(){
-      var provider = new firebase.auth.GoogleAuthProvider();
-      provider.addScope("profile");
-      provider.addScope("email");
 
-      firebase
-      .auth()
-      .signInWithPopup(provider)
-        .then((result) => {
-        const user = result.user;
-        console.log(user.email);
-        setShow(false);
-        setStatus(true);
-        ctx.user.email = user.email;
-        console.log(ctx);
+    // function handleGoogle(){
+    //   var provider = new firebase.auth.GoogleAuthProvider();
+    //   provider.addScope("profile");
+    //   provider.addScope("email");
 
-        fetch(`/account/findOne/${user.email}`)
-          .then((response) => response.text())
-          .then((text) => {
-            try {
-              const data = JSON.parse(text);
-            } catch (err) {
-              var user = firebase.auth().currentUser;
-              var displayName = user.displayName;
-              var userEmail = user.email;
-              var uid = user.uid;
-              const url = `/account/create/${displayName}/${userEmail}/${uid}`;
-              (async () => {
-                var res = await fetch(url);
-                var data = await res.json();
-                console.log(data);
-              })();
-            }
-          });
-      })
-      .catch((error) => {
-        const errorCode = error.code;
-        const errorMessage = error.message;
-        console.log("one");
-        props.setStatus("fail!");
-      });  
-    }    
+    //   firebase
+    //   .auth()
+    //   .signInWithPopup(provider)
+    //     .then((result) => {
+    //     const user = result.user;
+    //     console.log(user.email);
+    //     setShow(false);
+    //     setStatus(true);
+    //     ctx.user.email = user.email;
+    //     console.log(ctx);
+
+    //     fetch(`/account/findOne/${user.email}`)
+    //       .then((response) => response.text())
+    //       .then((text) => {
+    //         try {
+    //           const data = JSON.parse(text);
+    //         } catch (err) {
+    //           var user = firebase.auth().currentUser;
+    //           var displayName = user.displayName;
+    //           var userEmail = user.email;
+    //           var uid = user.uid;
+    //           const url = `/account/create/${displayName}/${userEmail}/${uid}`;
+    //           (async () => {
+    //             var res = await fetch(url);
+    //             var data = await res.json();
+    //             console.log(data);
+    //           })();
+    //         }
+    //       });
+    //   })
+    //   .catch((error) => {
+    //     const errorCode = error.code;
+    //     const errorMessage = error.message;
+    //     console.log("one");
+    //     props.setStatus("fail!");
+    //   });  
+    // }    
   
     return (<>
   
@@ -115,10 +116,11 @@ function Login(){
         onChange={e => setPassword(e.currentTarget.value)}/><br/>
   
       <button type="submit" className="btn btn-light" onClick={handle}>Login</button><br></br><br></br>
-      <button type="submit" className="btn btn-light" onClick={handleGoogle}>Google Login</button>
+
+      {/* <button type="submit" className="btn btn-light" onClick={handleGoogle}>Google Login</button>  */}
   
       <p className="forgot-password text-right"><br></br><br></br>
-          New to BadBank? <a href="#/CreateAccount/">JOIN</a> today!
+          Welcome to BadBank! <a href="#/CreateAccount/">JOIN</a> today!
       </p>
     </>);
   

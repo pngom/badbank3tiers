@@ -1,10 +1,11 @@
+// Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyCSXRKF4mmypNtQa3H8RAsc55067lvhvwE",
-    authDomain: "capstone-ae2f7.firebaseapp.com",
-    projectId: "capstone-ae2f7",
-    storageBucket: "capstone-ae2f7.appspot.com",
-    messagingSenderId: "776065115406",
-    appId: "1:776065115406:web:0b30871af16ac1da66a35f"
+  apiKey: "AIzaSyArNFnABTQW2sz8Ea1VECNiiDfeXaUIUu4",
+  authDomain: "capstone-cd3c2.firebaseapp.com",
+  projectId: "capstone-cd3c2",
+  storageBucket: "capstone-cd3c2.appspot.com",
+  messagingSenderId: "136913812145",
+  appId: "1:136913812145:web:94a3605d4c977a4a294090"
 };
 
 try {
