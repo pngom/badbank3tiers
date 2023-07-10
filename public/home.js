@@ -7,8 +7,8 @@ function Home(){
         {/* {JSON.stringify(ctx)} */}
       </div>
       <div className="card-body">
-        <p className="card-text" id="bodytxt">BadBank is here to serve your financial needs. If you would prefer speaking with a live representative, call 1 (800) XXX - XXXX.</p>
-        <p>Hours of Operation: Monday - Friday, 8AM - 5pm EST</p>
+        <p className="card-text" id="bodytxt">We offer great banking services! Secured deposits with convenient access!</p>
+        <p>Hours of operation: Mon-Fri:	9:00AM - 5:00PM and Sat:	9:00AM - 1:00PM ---- Tel: 800-888-8888</p>
         <Link to="/login" className="btn btn-primary"><b>Get Started!</b></Link>
       </div>
       </div>

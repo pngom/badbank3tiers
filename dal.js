@@ -1,7 +1,6 @@
 require('dotenv').config();
 
 const MongoClient = require('mongodb').MongoClient;
-//const url = 'mongodb://carmen:lolo33@badbankapp-shard-00-00.w9xv5.mongodb.net:27017,badbankapp-shard-00-01.w9xv5.mongodb.net:27017,badbankapp-shard-00-02.w9xv5.mongodb.net:27017/mybadbankcapstone?ssl=true&replicaSet=atlas-1u769d-shard-0&authSource=admin&retryWrites=true&w=majority';
 // const url         = 'mongodb://localhost:27017';
 const url = 'mongodb+srv://pngom:K8hKKQoFl04CNI9z@cluster0.u4odbyz.mongodb.net/MyBadBankCapstone?retryWrites=true&w=majority';
 

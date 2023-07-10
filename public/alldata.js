@@ -60,23 +60,7 @@ function AllData() {
       <td><a href="/#/withdraw"><button>Withdraw</button></a></td>
     </table>
     </div>
-    <div>
-      <Card
-          txtcolor="primary"
-          header="Checking Account"
-          text="Transaction History"
-          />
-        </div>
-        <div className="dropdown">
-          <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Last 30 days:
-          </button>
-          <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a className="dropdown-item" href="#">Giant Superstore</a>
-            <a className="dropdown-item" href="#">Amazon</a>
-            <a className="dropdown-item" href="#">Baltimore Gas and Electric</a>
-          </div>
-</div>
+
       <br></br>
       
       <button type="submit" className="btn btn-light" onClick={handleLogout}>Logout</button>
