@@ -57,7 +57,7 @@ function CreateAccount(){
           console.log(`Error ${errorCode}: ${errorMessage}`);
         });
   
-      const url = `/account/create/${name}/${email}/${password}`;
+      const url = `https://pngombadbankapp-d809ee1a9c5e.herokuapp.com/account/create/${name}/${email}/${password}`;
       (async () => {
         var res = await fetch(url);
         var data = await res.json();

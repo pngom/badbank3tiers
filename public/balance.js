@@ -47,7 +47,7 @@ function Balance(props){
     const email = ctx.user.email;
     const [balance, setBalance] = React.useState(0);  
   
-    fetch(`/account/findOne/${email}`)
+    fetch(`https://pngombadbankapp-d809ee1a9c5e.herokuapp.com/account/findOne/${email}`)
     .then(response => response.text())
     .then(text => {
         try {

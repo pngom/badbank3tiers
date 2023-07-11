@@ -9,7 +9,7 @@ function AllData() {
   const { user } = ctx; 
 
   React.useEffect(() => {
-        fetch('/account/find/' + user.email)
+        fetch('https://pngombadbankapp-d809ee1a9c5e.herokuapp.com/account/find/' + user.email)
           .then(response => response.json())
           .then(data => {
               

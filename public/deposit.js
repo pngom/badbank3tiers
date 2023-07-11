@@ -50,7 +50,7 @@ function Deposit(){
   
     function handle(){
       console.log(name,email,amount);
-      const url = `http://localhost:3000/account/deposit/${name}/${email}/${amount}`;
+      const url = `https://pngombadbankapp-d809ee1a9c5e.herokuapp.com/account/deposit/${name}/${email}/${amount}`;
         fetch(url)
           .then(response => response.json())
           .then(data => {
