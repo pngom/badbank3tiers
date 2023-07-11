@@ -39,23 +39,7 @@ function Logout() {
     <p>
       As of {dateString} your balance is XXX!
     </p>
-    <div>
-      <Card
-          txtcolor="primary"
-          header="Checking Account"
-          text="Transaction History"
-          />
-        </div>
-        <div class="dropdown">
-          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Last 30 days:
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">Giant Superstore</a>
-            <a class="dropdown-item" href="#">Amazon</a>
-            <a class="dropdown-item" href="#">Baltimore Gas and Electric</a>
-          </div>
-</div>
+
       <br></br>
       
       <button type="submit" className="btn btn-light" onClick={handleLogout}>Logout</button>
