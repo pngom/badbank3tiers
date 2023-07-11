@@ -15,7 +15,7 @@ function Home(){
       <div className="card-footer text-muted" style={{textAlign: 'center'}}>@2023 BadBank</div>
 
       <div>
-         <img src="./bank.png" style={{padding: '10px'}}></img>
+         <img src="bank.png" style={{padding: '10px'}}></img>
       </div>
 
 
